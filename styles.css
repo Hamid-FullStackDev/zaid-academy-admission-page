@@ -479,3 +479,14 @@ a.location{
 .ss{
     box-shadow: 0 0 10px red;
 }
+
+.procLink{
+    display: flex;
+    background: dodgerblue;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    margin: 1rem 0;
+}
