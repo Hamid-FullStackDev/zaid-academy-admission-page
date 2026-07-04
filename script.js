@@ -44,3 +44,12 @@ plus.addEventListener("click", () => {
     }
 
 })
+
+
+const humburger = document.querySelector(".humburger")
+const aside = document.querySelector("aside")
+
+humburger.addEventListener("click", () => {
+    humburger.classList.toggle("active")
+    aside.classList.toggle("active")
+})
