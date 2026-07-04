@@ -397,6 +397,7 @@ a.location{
     align-items: center;
     gap: 15px;
     width: 90%;
+    text-decoration: none;
     margin: 1rem auto;
     border-radius: 20px;
     box-shadow: 0 0 10px black;
@@ -426,6 +427,7 @@ a.location{
     font-family: "Constantia";
     line-height: 1.3;
     text-align: center;
+    color: black
 }
 
 .pix img{
