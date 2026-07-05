@@ -1,3 +1,8 @@
+const loader = document.querySelector(".loader");
+window.addEventListener("load", () => {
+    loader.style.display = "none"
+})
+
 const plus = document.querySelector(".plus");
 const phone = document.querySelector(".phone");
 const whatsapp = document.querySelector(".whatsapp");

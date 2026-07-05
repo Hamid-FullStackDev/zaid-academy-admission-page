@@ -560,6 +560,7 @@ aside ul li{
 
 aside ul li:active{
     transform: scale(.8);
+    box-shadow: 0 0 10px yellow;
 }
 
 aside ul li a{
@@ -568,3 +569,51 @@ aside ul li a{
     font-size: 1.2rem;
 }
 
+.backHome{
+    margin: 0 auto
+}
+
+.loader{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 999999999900009090909090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+
+.loader span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 10px; 
+    background: white;
+    box-shadow: 2px 2px 20px black,
+                -2px -2px 20px black,
+                2px -2px 20px black,
+                -2px 2px 20px black;
+    animation: breathing 1s ease-in-out infinite;
+}
+
+.loader span img{
+    width: 100%
+}
+
+@keyframes breathing{
+    0%, 100%{ 
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(.8)
+    }
+}
